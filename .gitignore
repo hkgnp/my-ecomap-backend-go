@@ -2,3 +2,4 @@ app.yaml
 .env
 .gcloudignore
 main
+.DS_Store
