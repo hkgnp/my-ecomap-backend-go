@@ -40,6 +40,7 @@ func Connect() error {
 	db := client.Database(os.Getenv("DB_NAME"))
 
 	if err != nil {
+		defer cancel()
 		return err
 	}
 	defer cancel()
